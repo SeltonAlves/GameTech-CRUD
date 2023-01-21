@@ -56,7 +56,7 @@ public class Cliente extends Pessoa {
 
     }
 
-    public Cliente lerclientes(long cpf) {
+    public Cliente lerclientes(Long cpf) {
         if (!clientes.isEmpty()) {
             for (Cliente cliente : clientes) {
                 if (cliente.getCpf().equals(cpf)) {

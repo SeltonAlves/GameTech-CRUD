@@ -1,15 +1,15 @@
-public class Pessoa {
+abstract class Pessoa {
 
     private String nome;
     private int idade;
-    private long cpf;
+    private Long cpf;
     private int telefone;
     private String email;
     private Endereco endereco;
 
     public Pessoa(){}
     
-    public Pessoa(String nome, int idade, long cpf, int telefone, String email, Endereco endereco) {
+    public Pessoa(String nome, int idade, Long cpf, int telefone, String email, Endereco endereco) {
         this.nome = nome;
         this.idade = idade;
         this.cpf = cpf;
@@ -56,7 +56,7 @@ public class Pessoa {
         return idade;
     }
 
-    protected long getCpf() {
+    protected Long getCpf() {
         return cpf;
     }
 
